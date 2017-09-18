@@ -1916,6 +1916,9 @@ class CPT_TAXONOMY {
 							// Add term count.
 							$term->count = isset( $cpt_posts_count[ $this_post->ID ] ) && $cpt_posts_count[ $this_post->ID ] > 0 ? $cpt_posts_count[ $this_post->ID ] : 0;
 
+							//ADDED BY TT. 4.6 bug fix.
+							wp_cache_add( $term->term_id, $term, 'terms' );
+
 							// Add to terms.
 							$terms[] = $term;
 
@@ -1974,6 +1977,9 @@ class CPT_TAXONOMY {
 
 							// Add count back to the mix.
 							$term->count = $term_count;
+
+							//ADDED BY TT. 4.6 bug fix.
+							wp_cache_add( $term->term_id, $term, 'terms' );
 
 							// Add to terms.
 							$terms[] = $term;

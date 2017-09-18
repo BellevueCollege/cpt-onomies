@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:     CPT-onomies: Using Custom Post Types as Taxonomies
+ * Plugin Name:     CPT-onomies: Using Custom Post Types as Taxonomies (BC Fork)
  * Plugin URI:      http://wordpress.org/plugins/cpt-onomies/
- * Description:     A CPT-onomy is a taxonomy built from a custom post type, using the post titles as the taxonomy terms. Create custom post types using the CPT-onomies custom post type manager or use post types created by themes or other plugins.
- * Version:         1.3.6
+ * Description:     A CPT-onomy is a taxonomy built from a custom post type, using the post titles as the taxonomy terms. Create custom post types using the CPT-onomies custom post type manager or use post types created by themes or other plugins. BC Fork to fix caching bug.
+ * Version:         1.3.6-bc1
  * Author:          Rachel Carden
  * Author URI:      https://bamadesigner.com
  * License:         GPL-2.0+
